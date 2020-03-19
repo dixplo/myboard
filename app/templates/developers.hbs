@@ -1,0 +1,24 @@
+<div class="ui segment">
+  <table class="ui selectable single line table">
+    <thead>
+      <tr>
+        <th>Identité</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |developer|}}
+        <tr>
+          <td>{{developer.identity}}</td>
+          <td class="right aligned">
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="2" class="center aligned">Aucun développeur</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+{{outlet}}
