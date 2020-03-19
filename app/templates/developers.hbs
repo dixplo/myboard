@@ -1,4 +1,9 @@
 <div class="ui segment">
+  <LinkTo @route="developers.new" class="ui orange button">
+    <i class="icon plus"></i>
+    Ajouter un nouveau models/Developer…
+  </LinkTo>
+  {{outlet}}
   <table class="ui selectable single line table">
     <thead>
       <tr>
@@ -21,4 +26,4 @@
     </tbody>
   </table>
 </div>
-{{outlet}}
+
